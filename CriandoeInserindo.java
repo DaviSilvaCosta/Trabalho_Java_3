@@ -31,8 +31,7 @@ public class CriandoeInserindo {
 
                 System.out.print("Digite o número de Itens que você deseja: ");
                 int numeroRegistros = scanner.nextInt();
-                scanner.nextLine(); // Consumir a quebra de linha pendente
-
+                scanner.nextLine(); 
                 String SQLcriarTabela = "CREATE TABLE IF NOT EXISTS " + nomeTabela + " (nome VARCHAR(60), preco DECIMAL(10,2))";
 
                 try {
@@ -47,7 +46,7 @@ public class CriandoeInserindo {
 
                         System.out.print("Digite o preço " + i + ": ");
                         double preco = scanner.nextDouble();
-                        scanner.nextLine(); // Consumir a quebra de linha pendente
+                        scanner.nextLine(); 
 
                         String SQLinserirDados = "INSERT INTO " + nomeTabela + " (nome, preco) VALUES ('" + nome + "', " + preco + ")";
 
