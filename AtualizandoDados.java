@@ -49,7 +49,7 @@ public class AtualizandoDados {
 
                 System.out.print("Digite o novo preço: ");
                 double novoPreco = scanner.nextDouble();
-                scanner.nextLine(); // Consumir a quebra de linha pendente
+                scanner.nextLine(); 
 
                 String SQLatualizarDados = "UPDATE " + nomeTabela + " SET nome = '" + novoNome + "', preco = " + novoPreco +
                         " WHERE nome = '" + nomeProduto + "'";
